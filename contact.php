@@ -2,7 +2,7 @@
 $host = "localhost";     // or 127.0.0.1
 $user = "root";          // default XAMPP/MySQL username
 $password = "";          // default is empty in XAMPP
-$dbname = "portfolio_db";
+$dbname = "portfolio";
 
 // Connect to database
 $conn = new mysqli($host, $user, $password, $dbname);
