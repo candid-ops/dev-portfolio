@@ -370,162 +370,95 @@ section {
 }
 
 .skills-section {
-    padding: 100px 10%;
-    background: var(--secondary-bg);
+  background-color: #0f0f2e;
+  color: #fff;
+  padding: 80px 20px;
 }
 
-.container-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-.skills-container {
-    flex: 1;
-    min-width: 300px;
+.section-title span {
+  color: #0ef;
 }
 
-.heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-    width: 100%;
-    color: #64ffda;
+/* Technical Skill Bars */
+.skill-bar {
+  background-color: #1a1a3c;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-.technical-bars .bar {
-    margin: 40px 0;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.skill-bar i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-.technical-bars .bar:first-child {
-    margin-top: 0;
+.skill-bar span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.technical-bars .bar:last-child {
-    margin-bottom: 0;
+.skill-bar .progress {
+  height: 10px;
+  background-color: #2c2c5c;
+  border-radius: 5px;
 }
 
-.technical-bars .bar .info {
-    flex-grow: 1;
+.skill-bar .progress-bar {
+  background-color: #0ef;
+  height: 10px;
+  border-radius: 5px;
+  transition: width 1s ease;
 }
 
-.technical-bars .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 8px;
-    color: #ccd6f6;
-}
-
-/* Custom progress bar styling */
-.progress {
-    height: 10px;
-    background-color: var(--progress-bg);
-    border-radius: 10px;
-    overflow: visible;
-}
-
-.progress-bar {
-    background-color: var(--progress-fill);
-    border-radius: 10px;
-    position: relative;
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-    transform: scaleX(0);
-}
-
-.progress-bar::after {
-    content: attr(data-percent);
-    position: absolute;
-    padding: 1px 6px;
-    background-color: var(--progress-bg);
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.bar i {
-    font-size: 32px;
-}
-
-/* Radial bars styling */
-.radial-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
+/* Radial Skills */
 .radial-bars {
-    position: relative;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
+  margin: 20px 0;
+  position: relative;
 }
 
 .radial-bars svg {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    transform: rotate(-90deg);
+  width: 140px;
+  height: 140px;
+  transform: rotate(-90deg);
 }
 
 .radial-bars circle {
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 8;
-    stroke: var(--progress-bg);
-    transform: translate(5px, 5px);
+  fill: none;
+  stroke-width: 12;
+  stroke: #2c2c5c;
 }
 
-.radial-bars circle.path {
-    stroke: var(--radial-progress);
-    stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * var(--percent)) / 100);
-    animation: radial-animate 1.5s linear forwards;
-    opacity: 0;
+.radial-bars .path {
+  stroke: #0ef;
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--percentage)) / 100);
+  transition: stroke-dashoffset 1s ease;
 }
 
 .radial-bars .percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--radial-progress);
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0ef;
 }
 
 .radial-bars .text {
-    position: absolute;
-    top: -40px;
-    ;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    font-weight: 500;
-    color: #ccd6f6;
-    animation: showText 0.5s 1.5s linear forwards;
-
-
-    opacity: 0;
+  margin-top: 10px;
+  font-weight: 600;
 }
+
 
 
 .projects-section {
