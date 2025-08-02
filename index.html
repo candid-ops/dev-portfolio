@@ -269,25 +269,38 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-section" id="contact">
-    <div class="contact-container">
-      <h2 class="contact-title">Contact <span>Me</span></h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p><i class="bi bi-envelope"></i> abdulkarim@example.com</p>
-          <p><i class="bi bi-telephone"></i> +254 712 345 678</p>
-          <p><i class="bi bi-geo-alt"></i> Nairobi, Kenya</p>
-        </div>
-        <form class="Contact-form" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn-box">Send Message</button>
+ <!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <div class="container contact-container">
+    <h2 class="section-title text-center">Contact <span>Me</span></h2>
+    <div class="row contact-content mt-4">
+      
+      <!-- Contact Info -->
+      <div class="col-md-5 contact-info mb-4">
+        <p><i class="bi bi-envelope me-2"></i> abdulkarim@example.com</p>
+        <p><i class="bi bi-telephone me-2"></i> +254 712 345 678</p>
+        <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <form class="contact-form" method="POST">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-info text-white">Send Message</button>
         </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- JS -->
   <script src="main.js"></script>
