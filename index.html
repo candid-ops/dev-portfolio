@@ -1,408 +1,296 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <!-- Typed.js -->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-        <title>Porfolio</title>
-    </head>
+  <!-- Smooth Scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
-    <body>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top shadow-sm" style="background-color: #0f0f2e;">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-info" href="#">Portfolio</a>
 
-        <!-- HEADER -->
-        <header class="header">
-            <nav class="navbar navbar-expand-xl navbar-dark sticky-top shadow-sm" style="background-color: #0f0f2e;">
-                <div class="container">
-                    <a class="navbar-brand fw-bold text-info" href="#">Portfolio</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <!-- Hamburger Toggle -->
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#About">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                    <!-- Nav Links -->
-                    <div class="collapse navbar-collapse" id="mainNavbar">
-                        <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#About">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Contact">Contact Us</a>
+  <!-- HOME SECTION -->
+  <section class="home text-light" id="Home">
+    <div class="home-content">
+      <h3>Hello It's Me</h3>
+      <h1>Abdul Karim</h1>
+      <h3>And I'm <span class="text"></span></h3>
+      <p>
+        I'm Abdul Karim, a passionate Full Stack Software Developer who specializes in building modern,
+        responsive websites and powerful web applications.
+      </p>
+      <br>
+      <p>
+        As a backend developer, I specialize in building the logic, systems, and data flow that power reliable
+        and scalable web applications. I write clean, secure, and efficient code.
+      </p>
 
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <section class="home text-light">
-            <div class="home-content">
-                <h3>Hello It's Me</h3>
-                <h1>Abdul Karim</h1>
-                <h3>And I'm <span class="text"></span> </h3>
-                <p>I'm Abdul Karim, a passionate Full Stack Software Developer who specializes in building modern,
-                    responsive websites and powerful web applications. With a strong command of both front-end and
-                    back-end
-                    technologies, I create clean, scalable, and user-focused solutions that solve real-world problems.
-                    I'm
-                    currently available and ready to bring value to your team from day one.</p>
-                <br>
-                As a backend developer, I specialize in building the logic, systems, and data flow that power reliable
-                and
-                scalable web applications. I write clean, secure, and efficient code, and I enjoy solving real-world
-                problems through APIs, databases, and server-side logic.
+      <div class="home-sci">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+      </div>
+      <a class="btn-box" href="#">More About Me</a>
+    </div>
 
-                <div class="home-sci">
-                    <a href="#" style="--i:7"> <i class="bi bi-facebook"></i></a>
-                    <a href="#" style="--i:8"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" style="--i:9"><i class="bi bi-instagram"></i></a>
-                    <a href="#" style="--i:10"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" style="--i:11"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" style="--i:12"><i class="bi bi-github"></i></a>
-                </div>
-                <a class="btn-box " href="#">more about me</a>
+    <div class="home-img">
+      <img src="images/bruno.jpg" alt="profile picture">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="About">
+    <div class="about-img">
+      <img src="images/bruno.jpg" alt="profile picture">
+    </div>
+
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h4>Fullstack Developer</h4>
+      <p>
+        Hi, I’m Abdul Karim — a passionate and results-driven Full Stack Software Developer based in Nairobi.
+        I specialize in building modern, scalable, and user-focused web applications from front-end UI/UX to back-end logic.
+      </p>
+      <a class="btn-box" href="#">More About Me</a>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="pt-5">
+      <h1 class="subtitle">My <span>Services</span></h1>
+      <div class="services-list">
+        <!-- Repeat for each service -->
+        <div>
+          <i class="bi bi-code" style="color: #0ef"></i>
+          <h2>UI/UX Design</h2>
+          <p>I design user-friendly and visually appealing interfaces focused on optimal user experience.</p>
+          <a class="read" href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="bi bi-code" style="color: #0ef"></i>
+          <h2>Front-End Development</h2>
+          <p>Building responsive and dynamic websites using HTML, CSS, JavaScript, and React.</p>
+          <a class="read" href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="bi bi-code" style="color: #0ef"></i>
+          <h2>Back-End Development</h2>
+          <p>Server-side development using PHP, MySQL, and API integration for data management.</p>
+          <a class="read" href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="bi bi-code" style="color: #0ef"></i>
+          <h2>Full Stack Development</h2>
+          <p>Complete solutions from front-end interfaces to back-end systems with scalable architecture.</p>
+          <a class="read" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container-wrapper">
+      <div class="skills-container">
+        <h1 class="heading">Technical Skills</h1>
+        <div class="technical-bars">
+          <!-- HTML -->
+          <div class="bar">
+            <i class="bi bi-filetype-html" style="color: #e34c26"></i>
+            <div class="info">
+              <span>HTML</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
             </div>
-
-            <div class="home-img">
-                <img src="images/bruno.jpg" alt="profile picture">
+          </div>
+          <!-- CSS -->
+          <div class="bar">
+            <i class="bi bi-filetype-css" style="color: #264de4"></i>
+            <div class="info">
+              <span>CSS</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
             </div>
-        </section>
-
-
-        <section class="about" id="About">
-            <div class="about-img">
-                <img src="images/bruno.jpg" alt="profile picture">
+          </div>
+          <!-- JS -->
+          <div class="bar">
+            <i class="bi bi-filetype-js" style="color: #f0db4f"></i>
+            <div class="info">
+              <span>JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
             </div>
-
-            <div class="about-text">
-                <h2>About <span>Me</span></h2>
-                <h4>fullstack Developer</h4>
-                <p>
-                    Hi, I’m Abdul Karim — a passionate and results-driven Full Stack Software Developer based in
-                    Nairobi. I
-                    specialize in building modern, scalable, and user-focused web applications from front-end UI/UX to
-                    back-end logic and database management.
-
-                    With a strong command of HTML, CSS, JavaScript, PHP, MySQL, and currently expanding into Python,
-                    Linux,
-                    and system-level programming, I bring both creativity and technical depth to every project. I’m not
-                    only
-                    a coder — I’m a problem-solver who takes pride in writing clean, efficient, and secure code that
-                    delivers real-world impact.
-
-                    Whether I’m crafting a sleek front-end design, building robust APIs, optimizing performance, or
-                    deploying to production, I approach every task with professionalism, precision, and care.
-                </p>
-                <a class="btn-box" href="#">more about me</a>
+          </div>
+          <!-- Python -->
+          <div class="bar">
+            <i class="bi bi-filetype-py" style="color: #4b8bbe"></i>
+            <div class="info">
+              <span>Python</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
             </div>
-        </section>
-
-        <section class="services" id="Services">
-            <div class="pt-5">
-                <h1 class="subtitle">My <span>Services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class="bi bi-code" style="color: #0ef"></i>
-                        <h2>UI/UX Desighn</h2>
-                        <p>User Interface (UI) and User Experience (UX) design go hand in hand to create visually
-                            appealing,
-                            intuitive, and user-friendly digital products. While UI focuses on the look and feel—such as
-                            colors, typography, buttons, and layouts—UX emphasizes the overall journey and how users
-                            interact with a product. A well-designed interface ensures clarity and consistency, while a
-                            strong user experience enhances satisfaction by making navigation seamless and meaningful.
-                            Together, UI/UX aim to deliver solutions that are not only beautiful but also effective in
-                            solving user problems and improving engagement.
-
-                        </p>
-                        <a class="read" href="#">Learn More</a>
-
-                    </div>
-                    <div>
-                        <i class="bi bi-code" style="color: #0ef"></i>
-                        <h2>Front-End Developer</h2>
-                        <p>User Interface (UI) and User Experience (UX) design go hand in hand to create visually
-                            appealing,
-                            intuitive, and user-friendly digital products. While UI focuses on the look and feel—such as
-                            colors, typography, buttons, and layouts—UX emphasizes the overall journey and how users
-                            interact with a product. A well-designed interface ensures clarity and consistency, while a
-                            strong user experience enhances satisfaction by making navigation seamless and meaningful.
-                            Together, UI/UX aim to deliver solutions that are not only beautiful but also effective in
-                            solving user problems and improving engagement.
-
-                        </p>
-                        <a class="read" href="#">Learn More</a>
-
-                    </div>
-                    <div>
-                        <i class="bi bi-code" style="color: #0ef"></i>
-                        <h2>Backend Developer</h2>
-                        <p>User Interface (UI) and User Experience (UX) design go hand in hand to create visually
-                            appealing,
-                            intuitive, and user-friendly digital products. While UI focuses on the look and feel—such as
-                            colors, typography, buttons, and layouts—UX emphasizes the overall journey and how users
-                            interact with a product. A well-designed interface ensures clarity and consistency, while a
-                            strong user experience enhances satisfaction by making navigation seamless and meaningful.
-                            Together, UI/UX aim to deliver solutions that are not only beautiful but also effective in
-                            solving user problems and improving engagement.
-
-                        </p>
-                        <a class="read" href="#">Learn More</a>
-
-                    </div>
-                    <div>
-                        <i class="bi bi-code" style="color: #0ef"></i>
-                        <h2>Full stack Developer</h2>
-                        <p>User Interface (UI) and User Experience (UX) design go hand in hand to create visually
-                            appealing,
-                            intuitive, and user-friendly digital products. While UI focuses on the look and feel—such as
-                            colors, typography, buttons, and layouts—UX emphasizes the overall journey and how users
-                            interact with a product. A well-designed interface ensures clarity and consistency, while a
-                            strong user experience enhances satisfaction by making navigation seamless and meaningful.
-                            Together, UI/UX aim to deliver solutions that are not only beautiful but also effective in
-                            solving user problems and improving engagement.
-
-                        </p>
-                        <a class="read" href="#">Learn More</a>
-
-                    </div>
-
-                </div>
+          </div>
+          <!-- React -->
+          <div class="bar">
+            <i class="bi bi-filetype-jsx" style="color: #61dbfb"></i>
+            <div class="info">
+              <span>React</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <section class="skills" id="skills>
-            <div class="container-wrapper">
-                <div class="skills-container">
-                    <h1 class="heading">Technical skills</h1>
-                    <div class="technical-bars">
-                        <!-- Html -->
-                        <div class="bar">
-                            <i class="bi bi-filetype-html" style="color: #e34c26"></i>
-                            <div class="info">
-                                <span>HTML</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%"
-                                        data-percentage="90%" aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
+      <!-- Professional Skills -->
+      <div class="skills-container">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-container">
+          <div class="radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70"></circle></svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70"></circle></svg>
+            <div class="percentage">65%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70"></circle></svg>
+            <div class="percentage">75%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70"></circle></svg>
+            <div class="percentage">85%</div>
+            <div class="text">Teamwork</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section" id="projects">
+    <div class="main-text">
+      <h2 class="section-title">Latest <span>Projects</span></h2>
+    </div>
+    <div class="portfolio-content">
+      <div class="project-card">
+        <img src="images/mobile.png" class="project-img" alt="Web App">
+        <div class="project-overlay">
+          <h5>Responsive Web App</h5>
+          <p>A full-stack MERN app with responsive UI and secure auth.</p>
+          <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/commerce.png" class="project-img" alt="Ecommerce">
+        <div class="project-overlay">
+          <h5>E-commerce Platform</h5>
+          <p>Online shop built with PHP, MySQL, and Bootstrap.</p>
+          <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/html.jpg" class="project-img" alt="Portfolio">
+        <div class="project-overlay">
+          <h5>Personal Portfolio</h5>
+          <p>Interactive portfolio using HTML, CSS, and JS.</p>
+          <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2 class="contact-title">Contact <span>Me</span></h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><i class="bi bi-envelope"></i> abdulkarim@example.com</p>
+          <p><i class="bi bi-telephone"></i> +254 712 345 678</p>
+          <p><i class="bi bi-geo-alt"></i> Nairobi, Kenya</p>
+        </div>
+        <form class="Contact-form" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-box">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-                                </div>
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
 
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="bar">
-                <i class="bi bi-filetype-css" style="color: #264de4"></i>
-                <div class="info">
-                    <span>CSS</span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%" data-percentage="85%"
-                            aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"></div>
-
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bar">
-                <i class="bi bi-filetype-js" style="color: #f0db4f"></i>
-                <div class="info">
-                    <span>JavaScript</span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 80%" data-percentage="80%"
-                            aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100"></div>
-
-
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="bar">
-                <i class="bi bi-filetype-py" style="color: #4b8bbe"></i>
-                <div class="info">
-                    <span>Python</span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 75%" data-percentage="75%"
-                            aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"></div>
-
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bar">
-                <i class="bi bi-filetype-jsx" style="color: #61dbfb"></i>
-                <div class="info">
-                    <span>React</span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%" data-percentage="85%"
-                            aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"></div>
-
-
-
-                    </div>
-
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            <div class="skills-container">
-                <h1 class="heading1">Professional Skills</h1>
-                <div class="radial-container">
-                    <!-- Creativity -->
-                    <div class="radial-bars">
-                        <svg>
-                            <circle cx="70" cy="70" r="70" style="--percent: 90"></circle>
-                            <circle class="path" cx="70" cy="70" r="70" style="--percent: 90"></circle>
-                        </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">Creativity</div>
-                    </div>
-
-                    <!-- Communication -->
-                    <div class="radial-bars">
-                        <svg>
-                            <circle cx="70" cy="70" r="70" style="--percent: 65"></circle>
-                            <circle class="path" cx="70" cy="70" r="70" style="--percent: 65"></circle>
-                        </svg>
-                        <div class="percentage">65%</div>
-                        <div class="text">Communication</div>
-                    </div>
-
-                    <!-- Problem Solving -->
-                    <div class="radial-bars">
-                        <svg>
-                            <circle cx="70" cy="70" r="70" style="--percent: 75"></circle>
-                            <circle class="path" cx="70" cy="70" r="70" style="--percent: 75"></circle>
-                        </svg>
-                        <div class="percentage">75%</div>
-                        <div class="text">Problem Solving</div>
-                    </div>
-
-                    <!-- Teamwork -->
-                    <div class="radial-bars">
-                        <svg>
-                            <circle cx="70" cy="70" r="70" style="--percent: 85"></circle>
-                            <circle class="path" cx="70" cy="70" r="70" style="--percent: 85"></circle>
-                        </svg>
-                        <div class="percentage">85%</div>
-                        <div class="text">Teamwork</div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </section>
-
-
-        <section class="projects-section" id="projects">
-            <div class="main-text">
-                <h2 class="section-title">Latest <span>Projects</span></h2>
-            </div>
-
-            <div class="portfolio-content">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="images/mobile.png" class="project-img" alt="Web Design Project">
-                    <div class="project-overlay">
-                        <h5>Responsive Web App</h5>
-                        <p>A full-stack MERN web app with responsive UI and secure user auth system.</p>
-                        <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="images/commerce.png" class="project-img" alt="Ecommerce Project">
-                    <div class="project-overlay">
-                        <h5>E-commerce Platform</h5>
-                        <p>A sleek online shop built with PHP, MySQL, and Bootstrap, featuring cart and checkout.</p>
-                        <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="images/html.jpg" class="project-img" alt="Portfolio Project">
-                    <div class="project-overlay">
-                        <h5>Personal Portfolio</h5>
-                        <p>This animated and interactive portfolio site showcases my skills, built with HTML, CSS, JS.
-                        </p>
-                        <a href="#" class="project-link"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="contact-container">
-                <h2 class="contact-title">Contact <span>Me</span></h2>
-
-                <div class="contact-content">
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <p><i class="bi bi-envelope"></i> abdulkarim@example.com</p>
-                        <p><i class="bi bi-telephone"></i> +254 712 345 678</p>
-                        <p><i class="bi bi-geo-alt"></i> Nairobi, Kenya</p>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <form class="contact-form" action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn-box">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <script src="main.js">
-
-        </script>
-    </body>
-
-    </html>
+</html>
