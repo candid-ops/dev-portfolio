@@ -5,7 +5,7 @@ $password = "";          // default is empty in XAMPP
 $dbname = "portfolio";
 
 // Connect to database
-$conn = new mysqli($host, $user, $password, $portfolio);
+$conn = new mysqli($host, $user, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -25,8 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare SQL query
+
     $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $name, $email, $message);
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+
 
     // Execute
     if ($stmt->execute()) {
@@ -39,4 +43,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
-?>
