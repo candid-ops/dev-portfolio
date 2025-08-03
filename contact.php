@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $host = "localhost";     // or 127.0.0.1
 $user = "root";          // default XAMPP/MySQL username
 $password = "";          // default is empty in XAMPP
@@ -25,12 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare SQL query
-
     $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
     if (!$stmt) {
         die("Prepare failed: " . $conn->error);
     }
 
+    // Bind parameters
+    $stmt->bind_param("sss", $name, $email, $message);
 
     // Execute
     if ($stmt->execute()) {
@@ -43,3 +47,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
+
+?>
