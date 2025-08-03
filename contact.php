@@ -5,7 +5,7 @@ $password = "";          // default is empty in XAMPP
 $dbname = "portfolio";
 
 // Connect to database
-$conn = new mysqli($host, $user, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $portfolio);
 
 // Check connection
 if ($conn->connect_error) {
