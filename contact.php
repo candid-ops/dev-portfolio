@@ -2,50 +2,46 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$host = "localhost";     // or 127.0.0.1
-$user = "root";          // default XAMPP/MySQL username
-$password = "";          // default is empty in XAMPP
+$host = "localhost";
+$user = "root";
+$password = "";
 $dbname = "portfolio";
 
-// Connect to database
+// Connect
 $conn = new mysqli($host, $user, $password, $dbname);
-
-// Check connection
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
 
-// If POST request
+// Handle POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars(trim($_POST["name"]));
-    $email = htmlspecialchars(trim($_POST["email"]));
-    $message = htmlspecialchars(trim($_POST["message"]));
+    echo "<p>Form received!</p>";
 
-    // Simple validation
+    $name = htmlspecialchars(trim($_POST["name"] ?? ''));
+    $email = htmlspecialchars(trim($_POST["email"] ?? ''));
+    $message = htmlspecialchars(trim($_POST["message"] ?? ''));
+
+    // Validation
     if (empty($name) || empty($email) || empty($message)) {
         echo "All fields are required.";
         exit;
     }
 
-    // Prepare SQL query
+    // Insert query
     $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
     if (!$stmt) {
         die("Prepare failed: " . $conn->error);
     }
 
-    // Bind parameters
     $stmt->bind_param("sss", $name, $email, $message);
-
-    // Execute
     if ($stmt->execute()) {
         echo "Message saved successfully!";
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Insert error: " . $stmt->error;
     }
 
     $stmt->close();
 }
 
 $conn->close();
-
 ?>
