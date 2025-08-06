@@ -119,7 +119,6 @@
     <div class="pt-5">
       <h1 class="subtitle">My <span>Services</span></h1>
       <div class="services-list">
-        <!-- Repeat for each service -->
         <div>
           <i class="bi bi-code" style="color: #0ef"></i>
           <h2>UI/UX Design</h2>
@@ -149,103 +148,86 @@
   </section>
 
   <!-- SKILLS SECTION -->
-<section class="skills-section" id="skills">
-  <div class="container">
-
-    <!-- Technical Skills -->
-    <div class="technical-skills mb-5">
-      <h2 class="section-title text-center">Technical <span>Skills</span></h2>
-      <div class="row gy-4 mt-4">
-        <!-- Skill Item -->
-        <div class="col-md-6">
-          <div class="skill-bar">
-            <i class="bi bi-filetype-html" style="color: #e34c26;"></i>
-            <span>HTML</span>
-            <div class="progress">
-              <div class="progress-bar" style="width: 90%">90%</div>
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="technical-skills mb-5">
+        <h2 class="section-title text-center">Technical <span>Skills</span></h2>
+        <div class="row gy-4 mt-4">
+          <div class="col-md-6">
+            <div class="skill-bar">
+              <i class="bi bi-filetype-html" style="color: #e34c26;"></i>
+              <span>HTML</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%">90%</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="skill-bar">
-            <i class="bi bi-filetype-css" style="color: #264de4;"></i>
-            <span>CSS</span>
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%">85%</div>
+          <div class="col-md-6">
+            <div class="skill-bar">
+              <i class="bi bi-filetype-css" style="color: #264de4;"></i>
+              <span>CSS</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%">85%</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="skill-bar">
-            <i class="bi bi-filetype-js" style="color: #f0db4f;"></i>
-            <span>JavaScript</span>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%">80%</div>
+          <div class="col-md-6">
+            <div class="skill-bar">
+              <i class="bi bi-filetype-js" style="color: #f0db4f;"></i>
+              <span>JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%">80%</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="skill-bar">
-            <i class="bi bi-filetype-py" style="color: #4b8bbe;"></i>
-            <span>Python</span>
-            <div class="progress">
-              <div class="progress-bar" style="width: 75%">75%</div>
+          <div class="col-md-6">
+            <div class="skill-bar">
+              <i class="bi bi-filetype-py" style="color: #4b8bbe;"></i>
+              <span>Python</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%">75%</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="skill-bar">
-            <i class="bi bi-filetype-jsx" style="color: #61dbfb;"></i>
-            <span>React</span>
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%">85%</div>
+          <div class="col-md-6">
+            <div class="skill-bar">
+              <i class="bi bi-filetype-jsx" style="color: #61dbfb;"></i>
+              <span>React</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%">85%</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Professional Skills -->
-    <div class="professional-skills mt-5">
-      <h2 class="section-title text-center">Professional <span>Skills</span></h2>
-      <div class="row radial-container justify-content-center mt-4">
-        <!-- Each radial bar -->
-        <div class="col-6 col-md-3 text-center radial-bars">
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle class="path" cx="70" cy="70" r="70" style="--percentage: 90;"></circle>
-          </svg>
-          <div class="percentage">90%</div>
-          <div class="text">Creativity</div>
-        </div>
-        <div class="col-6 col-md-3 text-center radial-bars">
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle class="path" cx="70" cy="70" r="70" style="--percentage: 65;"></circle>
-          </svg>
-          <div class="percentage">65%</div>
-          <div class="text">Communication</div>
-        </div>
-        <div class="col-6 col-md-3 text-center radial-bars">
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle class="path" cx="70" cy="70" r="70" style="--percentage: 75;"></circle>
-          </svg>
-          <div class="percentage">75%</div>
-          <div class="text">Problem Solving</div>
-        </div>
-        <div class="col-6 col-md-3 text-center radial-bars">
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle class="path" cx="70" cy="70" r="70" style="--percentage: 85;"></circle>
-          </svg>
-          <div class="percentage">85%</div>
-          <div class="text">Teamwork</div>
+      <div class="professional-skills mt-5">
+        <h2 class="section-title text-center">Professional <span>Skills</span></h2>
+        <div class="row radial-container justify-content-center mt-4">
+          <div class="col-6 col-md-3 text-center radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 90;"></circle></svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="col-6 col-md-3 text-center radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 65;"></circle></svg>
+            <div class="percentage">65%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="col-6 col-md-3 text-center radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 75;"></circle></svg>
+            <div class="percentage">75%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="col-6 col-md-3 text-center radial-bars">
+            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 85;"></circle></svg>
+            <div class="percentage">85%</div>
+            <div class="text">Teamwork</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- PROJECTS SECTION -->
   <section class="projects-section" id="projects">
@@ -280,51 +262,47 @@
     </div>
   </section>
 
- <!-- CONTACT SECTION -->
-<section class="contact-section" id="contact">
-  <div class="container contact-container">
-    <h2 class="section-title text-center">Contact <span>Me</span></h2>
-    <div class="row contact-content mt-4">
-      
-      <!-- Contact Info -->
-      <div class="col-md-5 contact-info mb-4">
-        <p><i class="bi bi-envelope me-2"></i> ordinaryfox479@gmail.com</p>
-        <p><i class="bi bi-telephone me-2"></i> +254724727238</p>
-        <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
-      </div>
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title text-center">Contact <span>Me</span></h2>
+      <div class="row contact-content mt-4">
+        
+        <!-- Contact Info -->
+        <div class="col-md-5 contact-info mb-4">
+          <p><i class="bi bi-envelope me-2"></i> ordinaryfox479@gmail.com</p>
+          <p><i class="bi bi-telephone me-2"></i> +254724727238</p>
+          <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
+        </div>
 
-     <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact <span class="text-info">Me</span></h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <form action="contact.php" method="POST" class="shadow p-4 rounded bg-white">
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea id="message" name="message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-info text-white px-4">Send Message</button>
-          </div>
-        </form>
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <form action="contact.php" method="POST" class="shadow p-4 rounded bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" name="message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-info text-white px-4">Send Message</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- JS -->
   <script src="main.js"></script>
 </body>
 
 </html>
+
