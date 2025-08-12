@@ -183,7 +183,7 @@
           <div class="col-md-6">
             <div class="skill-bar">
               <i class="bi bi-filetype-py" style="color: #4b8bbe;"></i>
-              <span>Python</span>
+              <span>Php</span>
               <div class="progress">
                 <div class="progress-bar" style="width: 75%">75%</div>
               </div>
