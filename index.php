@@ -201,26 +201,39 @@
         </div>
       </div>
 
+      <!-- PROFESSIONAL SKILLS -->
       <div class="professional-skills mt-5">
         <h2 class="section-title text-center">Professional <span>Skills</span></h2>
         <div class="row radial-container justify-content-center mt-4">
           <div class="col-6 col-md-3 text-center radial-bars">
-            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 90;"></circle></svg>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class="path" cx="70" cy="70" r="70" style="--percentage: 90;"></circle>
+            </svg>
             <div class="percentage">90%</div>
             <div class="text">Creativity</div>
           </div>
           <div class="col-6 col-md-3 text-center radial-bars">
-            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 65;"></circle></svg>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class="path" cx="70" cy="70" r="70" style="--percentage: 65;"></circle>
+            </svg>
             <div class="percentage">65%</div>
             <div class="text">Communication</div>
           </div>
           <div class="col-6 col-md-3 text-center radial-bars">
-            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 75;"></circle></svg>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class="path" cx="70" cy="70" r="70" style="--percentage: 75;"></circle>
+            </svg>
             <div class="percentage">75%</div>
             <div class="text">Problem Solving</div>
           </div>
           <div class="col-6 col-md-3 text-center radial-bars">
-            <svg><circle cx="70" cy="70" r="70"></circle><circle class="path" cx="70" cy="70" r="70" style="--percentage: 85;"></circle></svg>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class="path" cx="70" cy="70" r="70" style="--percentage: 85;"></circle>
+            </svg>
             <div class="percentage">85%</div>
             <div class="text">Teamwork</div>
           </div>
@@ -263,39 +276,62 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact-section" id="contact">
-    <div class="container contact-container">
-      <h2 class="section-title text-center">Contact <span>Me</span></h2>
-      <div class="row contact-content mt-4">
-        
-        <!-- Contact Info -->
-        <div class="col-md-5 contact-info mb-4">
-          <p><i class="bi bi-envelope me-2"></i> ordinaryfox479@gmail.com</p>
-          <p><i class="bi bi-telephone me-2"></i> +254724727238</p>
-          <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
-        </div>
+<section class="contact-section" id="contact">
+  <div class="container contact-container">
+    <h2 class="section-title text-center">Contact <span>Me</span></h2>
+    <div class="row contact-content align-items-start mt-5">
 
-        <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact <span class="text-info">Me</span></h2>
-    <div class="row justify-content-center">
+      <!-- Contact Info -->
+      <div class="col-md-5 contact-info mb-4">
+        <p><i class="bi bi-envelope me-2"></i> abdulkarim@example.com</p>
+        <p><i class="bi bi-telephone me-2"></i> +254 712 345 678</p>
+        <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
+      </div>
+
+      <!-- Contact Form -->
       <div class="col-md-7">
-        <form action="contact.php" method="POST" class="shadow p-4 rounded bg-white">
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        <?php if (!empty($_SESSION['success'])): ?>
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= htmlspecialchars($_SESSION['success']); unset($_SESSION['success']); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        <?php endif; ?>
+
+        <?php if (!empty($_SESSION['error'])): ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <?= htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
+        <?php endif; ?>
+
+        <form action="contact.php" method="POST" class="contact-form shadow p-4">
+          <!-- Name -->
           <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea id="message" name="message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+            <label for="name" class="form-label text-white fw-bold">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control"
+                   placeholder="Enter your name" minlength="2" maxlength="50"
+                   pattern="[A-Za-z\s]+" required>
           </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label text-white fw-bold">Your Email</label>
+            <input type="email" id="email" name="email" class="form-control"
+                   placeholder="Enter your email" required>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label text-white fw-bold">Your Message</label>
+            <textarea id="message" name="message" rows="5" class="form-control"
+                      placeholder="Type your message here" minlength="10" maxlength="500" required></textarea>
+          </div>
+
+          <!-- Submit -->
           <div class="text-center">
-            <button type="submit" class="btn btn-info text-white px-4">Send Message</button>
+            <button type="submit" class="btn btn-info text-white px-4">
+              <i class="bi bi-send"></i> Send Message
+            </button>
           </div>
         </form>
       </div>
@@ -309,4 +345,3 @@
 </body>
 
 </html>
-
