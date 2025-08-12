@@ -183,7 +183,7 @@
           <div class="col-md-6">
             <div class="skill-bar">
               <i class="bi bi-filetype-py" style="color: #4b8bbe;"></i>
-              <span>Php</span>
+              <span>PHP</span>
               <div class="progress">
                 <div class="progress-bar" style="width: 75%">75%</div>
               </div>
@@ -276,60 +276,50 @@
   </section>
 
   <!-- CONTACT SECTION -->
-<section class="contact-section" id="contact">
-  <div class="container contact-container">
-    <h2 class="section-title text-center">Contact <span>Me</span></h2>
-    <div class="row contact-content align-items-start mt-5">
+<section class="contact-section py-5" id="contact" style="background-color: #0f0f2e;">
+  <div class="container">
+    <h2 class="section-title text-center mb-4 text-white fw-bold">
+      Contact <span class="text-info">Me</span>
+    </h2>
 
+    <div class="row g-4">
       <!-- Contact Info -->
-      <div class="col-md-5 contact-info mb-4">
-        <p><i class="bi bi-envelope me-2"></i> abdulkarim@example.com</p>
-        <p><i class="bi bi-telephone me-2"></i> +254 712 345 678</p>
-        <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
+      <div class="col-lg-4">
+        <div class="p-4 rounded shadow-sm bg-dark text-light">
+          <p class="mb-3"><i class="bi bi-envelope me-2 text-info"></i> abdulkarim@example.com</p>
+          <p class="mb-3"><i class="bi bi-telephone me-2 text-info"></i> +254 712 345 678</p>
+          <p class="mb-0"><i class="bi bi-geo-alt me-2 text-info"></i> Nairobi, Kenya</p>
+        </div>
       </div>
 
       <!-- Contact Form -->
-      <div class="col-md-7">
-        <?php if (!empty($_SESSION['success'])): ?>
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <?= htmlspecialchars($_SESSION['success']); unset($_SESSION['success']); ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        <?php endif; ?>
-
-        <?php if (!empty($_SESSION['error'])): ?>
-          <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <?= htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        <?php endif; ?>
-
-        <form action="contact.php" method="POST" class="contact-form shadow p-4">
+      <div class="col-lg-8">
+        <form action="contact.php" method="POST" class="p-4 rounded shadow-sm bg-dark text-light">
+          
           <!-- Name -->
           <div class="mb-3">
-            <label for="name" class="form-label text-white fw-bold">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control"
-                   placeholder="Enter your name" minlength="2" maxlength="50"
-                   pattern="[A-Za-z\s]+" required>
+            <label for="name" class="form-label fw-bold">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control bg-transparent text-white border-info"
+              placeholder="Enter your name" minlength="2" maxlength="50" required>
           </div>
 
           <!-- Email -->
           <div class="mb-3">
-            <label for="email" class="form-label text-white fw-bold">Your Email</label>
-            <input type="email" id="email" name="email" class="form-control"
-                   placeholder="Enter your email" required>
+            <label for="email" class="form-label fw-bold">Your Email</label>
+            <input type="email" id="email" name="email" class="form-control bg-transparent text-white border-info"
+              placeholder="Enter your email" required>
           </div>
 
           <!-- Message -->
           <div class="mb-3">
-            <label for="message" class="form-label text-white fw-bold">Your Message</label>
-            <textarea id="message" name="message" rows="5" class="form-control"
-                      placeholder="Type your message here" minlength="10" maxlength="500" required></textarea>
+            <label for="message" class="form-label fw-bold">Your Message</label>
+            <textarea id="message" name="message" rows="5" class="form-control bg-transparent text-white border-info"
+              placeholder="Type your message here" minlength="10" maxlength="500" required></textarea>
           </div>
 
           <!-- Submit -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-info text-white px-4">
+          <div class="text-end">
+            <button type="submit" class="btn btn-info text-white px-5 py-2 fw-bold">
               <i class="bi bi-send"></i> Send Message
             </button>
           </div>
